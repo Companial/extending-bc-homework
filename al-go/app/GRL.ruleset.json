@@ -1,0 +1,9 @@
+{
+  "name": "GRL AL-Go sample (PTE)",
+  "description": "Switches off the AppSourceCop rules that only apply when publishing to AppSource, so the stretch task shows real findings.",
+  "rules": [
+    { "id": "AS0084", "action": "None", "justification": "PTE object IDs (50000-99999) are correct for a per-tenant extension." },
+    { "id": "AS0051", "action": "None", "justification": "No logo needed for a per-tenant extension." },
+    { "id": "AS0092", "action": "None", "justification": "Application Insights is covered in the telemetry track." }
+  ]
+}

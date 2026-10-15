@@ -1,0 +1,7 @@
+# Symbol packages are large and downloaded by the AL extension
+**/.alpackages/
+**/.snapshots/
+**/rad.json
+*.g.xlf
+# Compiled .app files in each track folder ARE tracked on purpose (overrides a global *.app ignore)
+!*.app
