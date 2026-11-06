@@ -2,6 +2,7 @@
 **/.alpackages/
 **/.snapshots/
 **/rad.json
-*.g.xlf
+# No global *.g.xlf rule: appsource/ ships its translation files on purpose.
+# Tracks that shouldn't (ui-onboarding) exclude them in their own .gitignore.
 # Compiled .app files in each track folder ARE tracked on purpose (overrides a global *.app ignore)
 !*.app
