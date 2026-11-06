@@ -1,0 +1,25 @@
+{
+  "id": "ae10094c-9de2-4445-b1d6-f892ed2c7982",
+  "name": "GRL UI and Onboarding",
+  "publisher": "Extending BC Workshop",
+  "version": "1.0.0.0",
+  "brief": "Homework sample app: a setup table and card, ready for an assisted setup guide and a notification.",
+  "description": "Sample app for the UI and onboarding homework track of the Extending BC workshop.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "29.0.0.0",
+  "application": "29.0.0.0",
+  "idRanges": [ { "from": 50120, "to": 50139 } ],
+  "target": "Cloud",
+  "runtime": "18.0",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}

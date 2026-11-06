@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="GRL AppSource Sample">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3686509030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sample Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3686509030 - Field 2570673311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Created At</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Field Created At - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3686509030 - Field 3279451185 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Field Customer Reference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3686509030 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3686509030 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Id</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Field Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3686509030 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3686509030 - Field 2666052267 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remarks</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GRL Sample Item - Field Remarks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3656455603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sample Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GRL Sample Items - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3656455603 - Control 2570673311 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the sample item was created.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GRL Sample Items - Control Created At - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3656455603 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the sample item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GRL Sample Items - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3656455603 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the sample item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GRL Sample Items - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 3554691657 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sample Item - Edit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet GRL Sample - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

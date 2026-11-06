@@ -1,0 +1,25 @@
+{
+  "id": "3d8f1c64-5a7e-4b92-9c10-e2b6a4f07d35",
+  "name": "GRL Integrations Sample",
+  "publisher": "Extending BC Workshop",
+  "version": "1.0.0.0",
+  "brief": "Integrations homework sample app: an equipment table with data and a custom API page.",
+  "description": "Sample app for the Integrations homework track of the Extending BC workshop.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "29.0.0.0",
+  "application": "29.0.0.0",
+  "idRanges": [ { "from": 50140, "to": 50159 } ],
+  "target": "Cloud",
+  "runtime": "18.0",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}

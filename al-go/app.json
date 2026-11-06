@@ -1,0 +1,25 @@
+{
+  "id": "b7a2e9d1-6c43-4f08-a5e7-1d90c3f84b26",
+  "name": "GRL AL-Go Sample",
+  "publisher": "Extending BC Workshop",
+  "version": "1.0.0.0",
+  "brief": "AL-Go homework sample app: a small, clean, compiling app to drop into a repository.",
+  "description": "Sample app for the AL-Go homework track of the Extending BC workshop.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "29.0.0.0",
+  "application": "29.0.0.0",
+  "idRanges": [ { "from": 50180, "to": 50199 } ],
+  "target": "Cloud",
+  "runtime": "18.0",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  }
+}
