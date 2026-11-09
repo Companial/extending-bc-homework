@@ -58,7 +58,6 @@ Bring the filled template (Markdown or `.xlsx`) to the review session. Nothing n
 - [Maintaining apps: update periods and what happens to an app that falls behind](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/app-maintain)
 - [Extension types and scope: how Marketplace apps are installed and updated](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-extension-types-and-scope)
 - [Dynamics 365 Business Central offer setup (listing types and transactable offers)](https://learn.microsoft.com/partner-center/marketplace-offers/dynamics-365-business-central-offer-setup)
-- Community post (optional): none chosen yet.
 
 ---
 
@@ -143,7 +142,6 @@ You can also open `app/` in VS Code with the AL extension. Set `al.packageCacheP
 - [AppSourceCop analyzer](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/analyzers/appsourcecop)
 - [Technical validation checklist](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-checklist-submission)
 - [Obsolete objects in AL](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-obsolete-objects)
-- Community post (optional): none chosen yet.
 
 ## Folder layout
 
