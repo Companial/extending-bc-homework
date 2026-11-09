@@ -27,7 +27,7 @@ The app contains:
 4. Add the **Dynamics 365 Business Central** application permission `API.ReadWrite.All` and grant admin consent.
 5. In BC open **Microsoft Entra Applications**, add the client ID, set **State** to **Enabled**, and assign the permission sets **D365 BASIC** and **GRL Integrations**. `SUPER` can't be assigned to an app, which is why the sample ships its own permission set.
 6. Request a token from `https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token` (client credentials) with scope `https://api.businesscentral.dynamics.com/.default`.
-7. Call the APIs (replace the placeholders):
+7. Call the APIs. The file [`requests.http`](requests.http) has all of these as ready-made requests (VS Code REST Client; in Postman or Bruno create the same calls by hand). Replace the placeholders:
    - `GET https://api.businesscentral.dynamics.com/v2.0/<tenantId>/<environmentName>/api/v2.0/companies`
    - `GET https://api.businesscentral.dynamics.com/v2.0/<tenantId>/<environmentName>/api/growthlab/workshop/v1.0/companies(<companyId>)/carBrands`
 
