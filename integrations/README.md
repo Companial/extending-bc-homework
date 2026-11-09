@@ -3,7 +3,7 @@
 Set up an Entra app registration, call a standard API, publish a custom API page and consume it from a client that authenticates on its own.
 
 ## What you get
-- `GRL Integrations Sample_1.0.0.0.app`: compiled app for BC 29 (runtime 18.0). Install it from **Extension Management**, no development setup needed.
+- `GRL Integrations Sample_1.0.0.0.app`: compiled app for BC 29 (runtime 18.0). Install it from the admin centre (Environments › your sandbox › **Manage Apps** › **Install Extension**), no development setup needed.
 - `app/`: the source. Object IDs 50140–50159, prefix `GRL`.
 
 The app contains:
