@@ -17,11 +17,14 @@ You need: a GitHub account and a BC sandbox where you can set up authentication 
 1. Open [AL-Go-PTE](https://github.com/microsoft/AL-Go-PTE), choose **Use this template** and create your repository.
 2. Add the app. Either:
    - copy the `app` folder from this track into the root of your repository and commit (it contains an `app.json`, so AL-Go finds it), or
-   - run the **Add existing app or test app** workflow and give it a **Direct Download URL** of the app. *(Placeholder: the URL of the final workshop repository is added once it exists.)*
+   - run the **Add existing app or test app** workflow and give it this **Direct Download URL** of the app: `https://github.com/Companial/extending-bc-homework/raw/main/al-go/GRL%20AL-Go%20Sample_1.0.0.0.app`
 3. Watch the **CI/CD** workflow. It builds on every commit and pull request. It should go green.
 4. Deploy. In your repository: **Settings → Environments → New environment**, named exactly like your sandbox. Add an environment secret **AUTHCONTEXT** with compressed JSON, no trailing newline:
    `{"TenantID":"<tenantId>","ClientID":"<clientId>","ClientSecret":"<secret>"}`
-   Use an Entra app registered for service-to-service access and enabled in the sandbox, as in the Integrations track.
+   Use an Entra app registered for service-to-service access, as in the Integrations track, with three differences for deployment:
+   - In Entra, grant it the Business Central application permission **Automation.ReadWrite.All** and give admin consent. The Automation API is what AL-Go deploys through, so `API.ReadWrite.All` from the Integrations track is not enough on its own. The [Learn guide](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication) lists both.
+   - In Business Central, register it on the **Microsoft Entra Applications** page, set State to **Enabled**, and assign the permission sets **D365 AUTOMATION** and **EXTEN. MGT. - ADMIN**.
+   - Don't assign SUPER. Applications can't be assigned it.
 5. **Actions → Publish To Environment → Run workflow.** Enter **latest** as the app version (there is no release yet) and your environment name.
 6. Open the sandbox and search for **Workshop Notes**. That page is your proof.
 
