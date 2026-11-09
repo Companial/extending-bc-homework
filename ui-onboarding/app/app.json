@@ -1,7 +1,7 @@
 {
   "id": "ae10094c-9de2-4445-b1d6-f892ed2c7982",
   "name": "GRL UI and Onboarding",
-  "publisher": "Extending BC Workshop",
+  "publisher": "Growth Lab",
   "version": "1.0.0.0",
   "brief": "Homework sample app: a setup table and card, ready for an assisted setup guide and a notification.",
   "description": "Sample app for the UI and onboarding homework track of the Extending BC workshop.",

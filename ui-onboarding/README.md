@@ -19,7 +19,7 @@ Not included, on purpose: an assisted setup guide and a setup notification. Thos
 
 ## Install the app
 
-1. Take the `.app` file in this folder (`Extending BC Workshop_GRL UI and Onboarding_1.0.0.0.app`). Use a sandbox.
+1. Take the `.app` file in this folder (`GRL UI and Onboarding_1.0.0.0.app`). Use a sandbox.
 2. Admin centre › Environments › your sandbox › **Manage Apps** › **Install Extension** › choose the `.app`, deployment schedule *Immediately*. Follow progress under **Operations**. You need to be an admin of the environment's tenant (or a delegated admin); if you aren't, ask whoever is ([Learn](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps)). Uploading through the in-client **Extension Management** page is deprecated.
 3. Wait until the operation shows as completed under **Operations**, then open **Extension Management** in the client to check that the app is *Installed*.
 4. Assign the permission set **GRL ONBOARDING** to your user. Search for *GRL Onboarding Setup* to check.

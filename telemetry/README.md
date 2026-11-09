@@ -47,7 +47,7 @@ Events are sent with `TelemetryScope::All` (to the environment resource and, if 
 
 ## Install the sample app
 
-Use the compiled `GRL_Telemetry_Sample_1.0.0.0.app` in this folder.
+Use the compiled `GRL Telemetry Sample_1.0.0.0.app` in this folder.
 
 - Online sandbox: Admin centre › Environments › your sandbox › **Manage Apps** › **Install Extension** › choose the `.app`, deployment schedule *Immediately*. Follow progress under **Operations**. You need to be an admin of the environment's tenant (or a delegated admin); if you aren't, ask whoever is ([Learn](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps)). Uploading through the in-client **Extension Management** page is deprecated. See also [Deploying a tenant customisation](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-deploy-tenant-customization).
 - **Note:** uploading through the in-client **Extension Management** page is deprecated. Microsoft's deprecation list currently gives removal as 2027 release wave 1 ([Learn](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/upgrade/deprecated-features-platform)). It may still work in your sandbox today, but prefer the admin centre route.
@@ -139,5 +139,5 @@ Community (one post):
 ## Folder contents
 
 - `app/`: AL source (`app.json`, `src/`)
-- `GRL_Telemetry_Sample_1.0.0.0.app`: compiled package
+- `GRL Telemetry Sample_1.0.0.0.app`: compiled package
 - `saved/00-event-overview.kql`: a first query that shows what your resource received. Write the queries for A, B and C yourself.

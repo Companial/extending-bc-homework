@@ -88,7 +88,7 @@ The app is a one-table, one-page extension (`GRL Sample Item`). Version 1.0.0.0 
 
 ## Install the compiled app (no development setup)
 
-`GRL Workshop_GRL AppSource Sample_2.0.0.0.app` is the compiled current version. Install it in a **sandbox** environment only.
+`GRL AppSource Sample_2.0.0.0.app` is the compiled current version. Install it in a **sandbox** environment only.
 
 - Recommended: Admin centre › Environments › your sandbox › **Manage Apps** › **Install Extension** › choose the `.app`, deployment schedule *Immediately*. Follow progress under **Operations**. You need to be an admin of the environment's tenant (or a delegated admin); if you aren't, ask whoever is ([Learn](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-manage-apps)). Uploading through the in-client **Extension Management** page is deprecated.
 - The *Extension Management* page in the client can still show the installed app, but uploading a per-tenant extension there is deprecated. Use the admin centre for uploading.
@@ -123,7 +123,7 @@ To rebuild the v1 baseline:
 
 ```powershell
 & "$al\alc.exe" /project:"$repo\baseline-source" /packagecachepath:$sym `
-    /out:"$repo\baseline\GRL Workshop_GRL AppSource Sample_1.0.0.0.app" `
+    /out:"$repo\baseline\GRL AppSource Sample_1.0.0.0.app" `
     /ruleset:"$repo\baseline-source\grl.ruleset.json" /analyzer:$cops
 ```
 
@@ -153,4 +153,4 @@ You can also open `app/` in VS Code with the AL extension. Set `al.packageCacheP
 | `baseline/` | Compiled v1.0.0.0 package, used as the AppSourceCop baseline |
 | `baseline-source/` | Source of v1.0.0.0, for reference and rebuilding |
 | `non-technical/` | Track A: requirement brief and comparison template |
-| `GRL Workshop_GRL AppSource Sample_2.0.0.0.app` | Compiled current version, installable in a sandbox |
+| `GRL AppSource Sample_2.0.0.0.app` | Compiled current version, installable in a sandbox |

@@ -1,7 +1,7 @@
 {
   "id": "7c1f3a52-9b0e-4d6a-8e21-5a4c0f93d1b7",
   "name": "GRL Telemetry Sample",
-  "publisher": "Extending BC Workshop",
+  "publisher": "Growth Lab",
   "version": "1.0.0.0",
   "brief": "Telemetry homework sample app for the Extending BC workshop",
   "description": "Emits custom telemetry and runs a job queue entry that fails deterministically.",
