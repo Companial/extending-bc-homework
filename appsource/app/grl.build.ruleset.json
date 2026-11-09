@@ -1,0 +1,46 @@
+{
+  "name": "GRL workshop ruleset - build only",
+  "description": "Same as grl.ruleset.json, but downgrades the planted errors to warnings so that the current .app can be produced. Not for validation.",
+  "rules": [
+    {
+      "id": "AS0084",
+      "action": "None",
+      "justification": "Workshop sample uses range 50100-50119 (PTE range) instead of a range allocated by Microsoft. Real AppSource apps must use their allocated range."
+    },
+    {
+      "id": "AS0092",
+      "action": "None",
+      "justification": "No Application Insights resource for a workshop sample."
+    },
+    {
+      "id": "AA0247",
+      "action": "None",
+      "justification": "Namespaces are out of scope for the workshop."
+    },
+    {
+      "id": "AS0002",
+      "action": "Warning",
+      "justification": "Build-only: lets the compiler emit the .app. The finding is still reported."
+    },
+    {
+      "id": "AS0005",
+      "action": "Warning",
+      "justification": "Build-only: lets the compiler emit the .app. The finding is still reported."
+    },
+    {
+      "id": "AS0032",
+      "action": "Warning",
+      "justification": "Build-only: lets the compiler emit the .app. The finding is still reported."
+    },
+    {
+      "id": "AS0011",
+      "action": "Warning",
+      "justification": "Build-only: lets the compiler emit the .app. The finding is still reported."
+    },
+    {
+      "id": "AS0016",
+      "action": "Warning",
+      "justification": "Build-only: lets the compiler emit the .app. The finding is still reported."
+    }
+  ]
+}

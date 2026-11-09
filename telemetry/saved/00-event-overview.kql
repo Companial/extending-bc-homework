@@ -1,0 +1,7 @@
+// Which events did this resource receive in the last day?
+// Open one row and look at customDimensions: that shows you which dimension names your events carry. Use them in your own queries.
+traces
+| where timestamp > ago(1d)
+| summarize events = count(), first = min(timestamp), last = max(timestamp)
+    by eventId = tostring(customDimensions.eventId)
+| order by eventId asc

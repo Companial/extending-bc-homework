@@ -1,0 +1,9 @@
+{
+  "name": "GRL workshop ruleset",
+  "description": "AppSourceCop ruleset for the workshop. Only suppresses rules that cannot apply to a neutral workshop sample.",
+  "rules": [
+    { "id": "AS0084", "action": "None", "justification": "Workshop sample uses range 50100-50119 (PTE range) instead of a range allocated by Microsoft. Real AppSource apps must use their allocated range." },
+    { "id": "AS0092", "action": "None", "justification": "No Application Insights resource for a workshop sample." },
+    { "id": "AA0247", "action": "None", "justification": "Namespaces are out of scope for the workshop." }
+  ]
+}

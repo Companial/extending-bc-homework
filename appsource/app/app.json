@@ -1,0 +1,29 @@
+{
+  "id": "9b466f4b-0626-46f5-b71b-1bfdfa8938d7",
+  "name": "GRL AppSource Sample",
+  "publisher": "GRL Workshop",
+  "brief": "Sample app for the Extending BC homework",
+  "version": "2.0.0.0",
+  "privacyStatement": "https://example.com/privacy",
+  "EULA": "https://example.com/eula",
+  "help": "https://example.com/help",
+  "url": "https://example.com",
+  "logo": "logo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "29.0.0.0",
+  "application": "29.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50119
+    }
+  ],
+  "target": "Cloud",
+  "runtime": "18.0",
+  "features": [
+    "TranslationFile"
+  ],
+  "description": "Minimal sample app for the Extending BC workshop: a list of sample items.",
+  "contextSensitiveHelpUrl": "https://example.com/help/"
+}
