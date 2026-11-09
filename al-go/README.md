@@ -6,7 +6,7 @@ Create a repository from the AL-Go template, add the sample app, get CI green an
 - `GRL AL-Go Sample_1.0.0.0.app`: compiled app for BC 29 (runtime 18.0).
 - `app/`: the source. Object IDs 50180–50199, prefix `GRL`. It builds without errors or warnings under CodeCop, UICop, PerTenantExtensionCop and (with `GRL.ruleset.json`) AppSourceCop, so any finding you see later is one you introduced.
 
-You need: a GitHub account and a BC sandbox where you can set up authentication for deployment. **Unverified:** how partners without a sandbox get one (on the presenters' "to verify" list).
+You need: a GitHub account and a BC sandbox where you can set up authentication for deployment. If you don't have a sandbox yet, a Partner Sandbox is one route. Ask in the workshop chat if you get stuck.
 
 ## Minimum deliverable
 1. Repository created from the [AL-Go-PTE](https://github.com/microsoft/AL-Go-PTE) template.
@@ -40,7 +40,7 @@ The PTE template doesn't run AppSourceCop. In `.AL-Go/settings.json` add:
 }
 ```
 
-The sample's `app/AppSourceCop.json` already sets the affix. Commit and watch CI/CD. A PTE uses IDs in 50000–99999, which AppSourceCop rejects, so `app/GRL.ruleset.json` switches off the three rules that only matter when publishing to AppSource (AS0084, AS0051, AS0092). AL-Go can use it through the `rulesetFile` setting. **Unverified:** the exact path form `rulesetFile` expects in a project folder, so check [AL-Go settings](https://github.com/microsoft/AL-Go/blob/main/Scenarios/settings.md).
+The sample's `app/AppSourceCop.json` already sets the affix. Commit and watch CI/CD. A PTE uses IDs in 50000–99999, which AppSourceCop rejects, so `app/GRL.ruleset.json` switches off the three rules that only matter when publishing to AppSource (AS0084, AS0051, AS0092). AL-Go can use it through the `rulesetFile` setting, which takes the filename of the custom ruleset file ([AL-Go settings](https://github.com/microsoft/AL-Go/blob/main/Scenarios/settings.md)).
 
 Then add a deliberate finding (a field without a tooltip) and read how the pipeline reports it.
 

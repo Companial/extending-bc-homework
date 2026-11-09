@@ -40,6 +40,76 @@ Minimum deliverable:
 3. A getting-started checklist with at least three items for that persona, as a screenshot of **Checklist Administration**.
 4. A half-page note: for each of the three, which level you chose (personalise, configure, extend) and why.
 
+### How to do it, step by step
+
+Do this in a sandbox. All the steps are in the browser client; no development tools are needed.
+
+#### Profile, role centre and customised pages
+
+Your user needs the **D365 Profile Mgt.** permission set or equivalent. Without it you cannot add fields that are not already defined on the page.
+
+1. Choose **Search** (Alt+Q), enter **Profiles (Roles)** and open the page.
+2. Choose **New** and fill in the fields. Hover over a field to read its description. Set the **Role Center** the persona should land on.
+3. Select the **Enabled** checkbox if users should be able to pick the role on **Available Roles**.
+4. Select the profile line, choose **Edit**, then choose **Customize pages**. A new browser tab opens with the **Customizing** banner.
+5. Change the role centre and open your list (for example **GRL Customer Tiers**) the same way a user personalises: show, hide and move fields and actions. To add a field that is in the table but not on the page, choose **+ Field** and drag it from the **Add field to page** pane. To open a page, Ctrl+Click an action that is highlighted with an arrowhead.
+6. Choose **Done** on the banner and close the tab.
+7. Back on the profile, choose **Manage customized pages** to check that both pages are listed.
+8. On **Profiles (Roles)**, choose **Export Profiles**. A zip file is downloaded; this is the profile package.
+
+Things to know:
+
+- Customisation cannot create new fields, only show existing ones. A field added this way is locked for editing and cannot be unlocked.
+- **Export Profiles** exports all user-created profiles and page customisations in the tenant, not only yours. It does not export profiles or customisations that come from extensions. Delete or ignore other profiles in the package.
+- To test the package, choose **Import Profiles** on **Profiles (Roles)** and follow the **Import Profiles** guide. You can import selected profiles only. Importing needs the **SUPER** or **D365 Profile Mgmt** permission set.
+- Users see a changed profile only after they sign out and in again.
+
+Learn: [Create a profile, export and import](https://learn.microsoft.com/dynamics365/business-central/admin-users-profiles-roles), [Customise pages for a profile](https://learn.microsoft.com/dynamics365/business-central/ui-personalization-manage), [Profile package contents](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/developer/devenv-design-profiles-using-client).
+
+#### Configuration package with master data
+
+Creating a company needs the **SUPER** permission set. Exporting a package needs **Direct Read** effective permission on every table in it; importing needs **Direct Insert** and **Direct Modify**. Indirect permissions are not enough.
+
+1. In the source company, enter your five customers and five items.
+2. Open **Configuration Worksheet**. Add a line of type **Area**, then add the tables you want to transfer (**Customer**, **Item**, optionally **GRL Customer Tier**). Choose **Get Tables**, set the table types and filters on the **Get Config. Tables** request page, and choose **OK**.
+3. Select the worksheet lines and choose **Assign Package**. On **Configuration Packages**, select an existing package or create a new one.
+4. Export the package as a `.rapidstart` file, or to Excel.
+5. Create the target company: open **Companies**, start the **Create New Company** guide and pick **Create New - No Data** (or **Production - Setup Data Only**). Wait until the setup status on **Companies** shows it is ready, then switch to it in **My Settings**.
+6. In the new company open **Configuration Packages**, import the file you exported and apply it. If you worked in Excel, choose **Import from Excel** on the package card, validate the data, then choose **Apply Package**.
+7. Check **Customers** and **Items** in the new company.
+
+Things to know:
+
+- Do not include tables that hold posted entries (for example customer or item ledger entries). They cannot be imported.
+- The source and target must run the same Business Central version, and the same app version if you include `GRL Customer Tier`. Missing tables or fields are skipped on import.
+- Use configuration packages to set up a company for the first time, not on a company in production.
+- In the Excel workbook, do not move, change or delete columns; otherwise it cannot be imported. Blob fields cannot be transferred through Excel.
+- A new company cannot be renamed later, only its **Display Name**.
+
+Learn: [Set up company configuration packages](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/set-up-standard-company-configuration-packages), [Apply company configuration packages](https://learn.microsoft.com/dynamics365/business-central/dev-itpro/administration/apply-company-configuration-packages), [Create new companies](https://learn.microsoft.com/dynamics365/business-central/about-new-company), [Use Excel to import data](https://learn.microsoft.com/dynamics365/business-central/across-import-data-configuration-packages).
+
+#### Getting-started checklist
+
+A checklist item is built from an existing *guided experience item* (for example an **Assisted Setup** guide, a **Learn** link or a **Video**). The client lets you select these tasks; it cannot create new ones or take an arbitrary link. Pick three existing tasks that suit your persona. A custom task such as the GRL setup guide needs an extension, which is the developer track.
+
+1. Search for **Checklist Administration** and open it.
+2. Choose **Create checklist item**.
+3. In **Guided Experience Type**, select the type of task, such as **Assisted Setup**, **Learn** or **Video**.
+4. In **Task**, open the lookup and select an existing task.
+5. In **Completion Requirements**, choose **Anyone with roles** (one user completes it for everyone), **Everyone with roles** (each user completes it) or **Specific users**.
+6. For the two role options, add your persona's profile as a **Role ID** in **Checklist Item Roles**. For **Specific users**, add users in **Checklist Users**. An item needs at least one role or user.
+7. In **Order ID**, enter a number above zero. Lower numbers appear earlier.
+8. Close the card. Repeat for the other items.
+9. To change an item later, open **Checklist Administration**, select its **Task**, edit the card and close it. Changing the completion requirements asks you to confirm removal of existing assignments.
+10. Take your screenshot of **Checklist Administration**.
+
+Things to know:
+
+- Users see the checklist on their Role Centre, when it is shown there, for items assigned to them or their role.
+- An assisted setup item can appear completed if the underlying guide is already completed for the company.
+
+Learn: [Onboarding checklists for users](https://learn.microsoft.com/dynamics365/business-central/admin-checklist).
+
 Stretch: a second persona, or an analysis view bookmarked on the role centre. Power BI embedding is only for partners who already have a licence.
 
 ## Developer track
